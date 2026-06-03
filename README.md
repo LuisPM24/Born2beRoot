@@ -269,7 +269,7 @@ En mi caso ha sido AppArmor porque no tenía opción a escoger SELinux.
 
 Se tratan de dos frontends para manejar los cortafuegos dentro de Linux. Al igual que antes, UFW se usa para UFW mientras que firewalld se usa para RHEL. Por lo general, firewalld se usa más para redes complejas y amplias mientras que UFW es para redes pequeñas.
 
-En mi caso ha sido UFW porque no tenía opción a escoger firewalld. A su vez, pienso que para una máquina virtual que solo yo estoy usando, no tiene sentido coger firewalld sino UFW ya que es menos complejo.0
+En mi caso ha sido UFW porque no tenía opción a escoger firewalld. A su vez, pienso que para una máquina virtual que solo yo estoy usando, no tiene sentido coger firewalld sino UFW ya que es menos complejo.
 
 ## VirtualBox vs UTM
 
