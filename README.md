@@ -250,3 +250,29 @@ ip link | grep "link/ether" | awk '{print $2}'
 ```bash
 journalctl _COMM=sudo | grep COMMAND | wc -l
 ```
+
+# Descripción de Proyecto
+
+## Debian vs Rocky Linux
+
+La principal diferencia es que Rocky Linux esta más enfocado a entornos empresariales que trabajan con entornos RHEL mientras que Debian es más un proyecto comunitario. Se puede decir que Rocky esta más enfocado a servidores mientras que Debian es más general y tiene una comunidad más grande.
+
+En mi caso, he escogido Debian por la gran comunidad que tiene y porque ya conozco el este SO.
+
+## AppArmor vs SELinux
+
+Ambos son sistemas de seguridad MAC que se encargan de comprobar que es lo que pueden hacer o no los procesos y servicios. AppArmor se encuentra en el ecosistema de Debian y es lo común. Por otro lado, SELinux es lo habitual en RHEL y es algo más potente pero difícil de manejar.
+
+En mi caso ha sido AppArmor porque no tenía opción a escoger SELinux.
+
+## UFW vs firewalld
+
+Se tratan de dos frontends para manejar los cortafuegos dentro de Linux. Al igual que antes, UFW se usa para UFW mientras que firewalld se usa para RHEL. Por lo general, firewalld se usa más para redes complejas y amplias mientras que UFW es para redes pequeñas.
+
+En mi caso ha sido UFW porque no tenía opción a escoger firewalld. A su vez, pienso que para una máquina virtual que solo yo estoy usando, no tiene sentido coger firewalld sino UFW ya que es menos complejo.0
+
+## VirtualBox vs UTM
+
+VirtualBox es una herramienta de virtualización compatible con todos los sistemas operativos. Es más común y conocido. Por otro lado, UTM es una herramienta de virtualización de macOS. Es algo más potente y perfecta para máquinas virtuales de mac, pero deja mucho que desear para otros SO.
+
+En mi caso ha sido VirtualBox porque me parece una mejor opción para una máquina virtual con Debian. Pienso que UTM hubiera dado más problemas y que hubiera sido más tedioso de trabajar.
